@@ -29,11 +29,30 @@
     <script src="./js/script.js" defer></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="header-div">
+        <h1 class="title">Metric/Imperial Unit Conversion</h1>
+        <div class="input-div">
+          <input id="input-el" class="input-el" type="text" value="0" />
+        </div>
+        <button id="convert-btn" class="btn-el">Convert</button>
+      </div>
+    </header>
     <main>
-      <div id="length_div"  class="unit_div"></div>
-      <div id="volume_div"  class="unit_div"></div>
-      <div id="mass_div"  class="unit_div"></div>
+      <div class="main-div">
+        <div id="length_div" class="unit-div">
+          <h2 class="unit-title">Length (Meter/Feet)</h2>
+          <p id='p-length' class="unit-p">0 meters = 0 feet | 0 feet = 0 meters</p>
+        </div>
+        <div id="volume_div" class="unit-div">
+          <h2 class="unit-title">Length (Meter/Feet)</h2>
+          <p class="unit-p">20 meters = 54.45 | 20 feet = 59.45</p>
+        </div>
+        <div id="mass_div" class="unit-div">
+          <h2 class="unit-title">Length (Meter/Feet)</h2>
+          <p class="unit-p">20 meters = 54.45 | 20 feet = 59.45</p>
+        </div>
+      </div>
     </main>
   </body>
 </html>
