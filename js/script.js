@@ -31,11 +31,11 @@ function convertMass(value) {
 
 /* Event Listeners */
 convertBtn.addEventListener('click', () => {
+  const sanitizedNumber = Number(inputEl.value)
   if (!inputEl.value.trim() || isNaN(inputEl.value)) {
     alert('Please enter a valid number')
     return
   }
-  const sanitizedNumber = Number(inputEl.value)
   convertLength(sanitizedNumber)
   convertVolume(sanitizedNumber)
   convertMass(sanitizedNumber)
